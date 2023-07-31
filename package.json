@@ -1,0 +1,26 @@
+{
+  "name": "belajar-nodejs-validation",
+  "version": "1.0.0",
+  "description": "Belajar NodeJS Validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "author": "Muhammad Gusti Kurniawan",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@types/jest": "^29.5.3",
+    "babel-jest": "^29.6.2",
+    "jest": "^29.6.2"
+  },
+  "dependencies": {
+    "joi": "^17.9.2"
+  }
+}
