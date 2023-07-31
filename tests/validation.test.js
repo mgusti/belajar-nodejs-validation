@@ -19,8 +19,12 @@ describe("Joi", () => {
     const resultUsername = usernameSchema.validate("eko@pzn.com");
     console.info(resultUsername);
 
-    const resultIsAdminSchema = isAdminSchema.validate("1");
+    const resultIsAdminSchema = isAdminSchema.validate("true");
     console.info(resultIsAdminSchema);
+
+    console.info(typeof "true");
+    console.info(typeof resultIsAdminSchema.value);
+    console.info(typeof resultIsAdminSchema.error);
 
     const resultPriceSchema = priceSchema.validate("10000");
     console.info(resultPriceSchema);
